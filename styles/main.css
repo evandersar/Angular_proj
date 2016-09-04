@@ -1,0 +1,202 @@
+#all_cont{
+	/*padding: 0 15px;*/
+}
+#header a{
+	color: #000;
+}
+#header a:hover{
+	color: #00E0FF;
+}
+#header{
+	background-color: rgb(255, 255, 255);
+}
+
+#slider{
+	position: relative;
+}
+#slide_caption{
+	height: 100%;
+	padding-top: 6%;
+}
+#slide_caption h1{
+	margin: 0;
+}
+.butt{
+	background-color: transparent;
+	color: #FFF;
+	display: inline-block;
+	margin-top: 20px;
+	border: 1px solid;
+	border-radius: 0;
+	cursor: pointer;
+}
+.butt:hover{
+	color: #00E0FF;
+}
+#inslide{
+	color: #FFF;
+	text-align: center;
+	/*background-color: rgba(19, 19, 21, 0.3);*/
+	position: absolute;
+	top: 32%;
+	width: 100%;
+	height: 38%;
+}
+#slogan{
+	font-weight: 100;
+}
+.container-fluid{
+	padding: 0;
+}
+h1{
+	font-size: 3vw;
+}
+
+#footer{
+	background-color: #121215;
+	text-align: center;
+	color: #FFF;
+}
+.row{
+	margin: 0;
+}
+#up_foot{
+	background-color: #222;
+}
+#info{
+	background-color: #00E0FF;
+	margin: 80px 0;
+}
+#up_arr{
+	border-radius: 10px;
+	width: 20px;
+	height: 20px;
+}
+.services{
+	text-align: center;
+	padding: 50px 0;
+}
+#services hr{
+	height: 2px;
+	background-color: #00E0FF;
+	border: none;
+	margin: 40px 0;
+}
+#services img{
+	cursor: pointer;
+}
+#getnow{
+	background-color: #F6F6F6;
+}
+#start div{
+	border: 1px solid;
+	margin-bottom: 50px;
+}
+.text_left{
+	text-align: left;
+}
+.black{
+	color: #000;
+}
+#filter{
+	margin: 30px 0;
+}
+#filter h5{
+	border: 1px solid #FFF;
+	padding: 10px 0;
+	font-size: 1.5vw;
+}
+#filter h5:hover{
+	cursor: pointer;
+	border-color: #00E0FF;
+}
+.mask{
+	background-color: rgba(0, 224, 255, 0.5);
+	width:100%;
+	height:100%;
+	position: absolute;
+}
+.mask > span{
+	color: #FFF;
+	position: relative;
+	top: 40%;
+	font-size: 1.8vw;
+}
+#allImages div{
+	padding: 0;
+}
+#portf_head{
+	padding-bottom: 0;
+}
+#statistics{
+	background-color: #121215;
+	color: #FFF;
+}
+#teammates{
+	margin-top: 50px;
+}
+#teammates h4{
+	margin: 5px 0 0;
+	color: #00E0FF;
+}
+#teammates > div{
+	background-color: #F6F6F6;
+	border-right: 20px solid white;
+	padding: 0;
+}
+#teammates a>img{
+	padding: 0;
+	border: 1px solid white;
+	margin-bottom: 2px;
+	margin-top: 20px;
+}
+#teammates a{
+	display: inline-block;
+}
+#teammates div>img{
+	margin-bottom: 20px;
+}
+.inslide{
+	color: #FFF;
+	text-align: center;
+	background-color: rgba(19, 19, 21, 0.5);
+	position: absolute;
+	top: 43%;
+	width: 100%;
+	height: 15%;
+}
+#news_desc h5, h1{
+	color: #00E0FF;
+}
+#news_desc h5{
+	text-align: right;
+	margin: 40px 0 0;
+}
+#news_desc a{
+	text-decoration: none;
+}
+#news_desc h1{
+	margin: 0;
+}
+#news_desc hr{
+	margin-top: 10px;
+}
+#contacts{
+	background-color: #121215;
+	color: #FFF;
+}
+#form_inputs input {
+	background-color: #131315;
+	border-radius: 0;
+	border-bottom: 2px solid white;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: white;
+}
+#form_inputs span{
+	color: #00E0FF;
+}
+.soc{
+	float: left;
+}

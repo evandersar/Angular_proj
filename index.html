@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="PortfApp"> 
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio KET</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-cookies.js"></script>
+<!--<script src="scripts/angular.js"></script>-->
+<script type="text/javascript" src="scripts/ngSmoothScroll/lib/angular-smooth-scroll.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head> 
+
+<body ng-controller="MainCtrl">
+
+
+<div class="container-fluid" id="all_cont">
+
+  <nav class="navbar navbar-fixed-top navbar-default header" id='header'>
+    <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-lg-2 col-lg-offset-2">
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand img-fluid" href="#" offset="50" scroll-to="home_anch"><img src="images/logo.fw.png"><span><b>KET</b></span></a>
+        </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-right navbar-nav ">
+                <li><a class="nav-link" href="#home_anch" offset="50" scroll-to="home_anch"><span>HOME</span></a></li>
+                <li><a class="nav-link" href="#serv_anch" offset="50" scroll-to="serv_anch"><span>SERVICES</span></a></li>
+                <li><a class="nav-link" href="#portf_anch" offset="50" scroll-to="portf_anch"><span>PORTFOLIO</span></a></li>
+                <li><a class="nav-link" href="#about_anch" offset="50" scroll-to="about_anch"><span>ABOUT</span></a></li>
+                <li><a class="nav-link" href="#news_anch" offset="50" scroll-to="news_anch"><span>NEWS</span></a></li>
+                <li><a class="nav-link" href="#cont_anch" offset="50" scroll-to="cont_anch"><span>CONTACT</span></a></li>
+            </ul>
+        </div>
+
+        </div>
+
+    </div>
+
+    </div>
+  </nav>
+
+<a name="home_anch" id="home_anch"></a>
+
+  <div id='slider'>
+      <div id='slide'><img id='photo' src="images/head.fw.png" class="img-responsive"></div>
+      
+      <div id='inslide'>
+
+          <div id='slide_caption'>
+            <h1 id='slogan'>WE MAKE WEBSITES</h1>
+            <a href="#portf_anch" offset="50" scroll-to="portf_anch"><div class="btn butt"><span>START TOUR</span></div></a>
+          </div>
+
+      </div>
+
+    </div><a name="serv_anch" id="serv_anch"></a>
+
+    <div class="services" id="services">
+
+      <div class="row" >
+        <div class="col-sm-2 col-sm-offset-2 col-xs-6">
+          <img src="images/web.fw.png" ng-click="changeText(1)"><br><br>
+          <h5>WEB DESIGN</h5>
+          <img src="images/under.fw.png">
+        </div>
+        <div class="col-sm-2 col-xs-6">
+          <img src="images/graph.fw.png" ng-click="changeText(2)"><br><br>
+          <h5>GRAPHIC DESIGN</h5>
+          <img src="images/under.fw.png">
+        </div>
+        <div class="col-sm-2 col-xs-6">
+          <img src="images/prog.fw.png" ng-click="changeText(3)"><br><br>
+          <h5>PROGRAMMING</h5>
+          <img src="images/under.fw.png">
+        </div>
+        <div class="col-sm-2 col-xs-6">
+          <img src="images/phot.fw.png" ng-click="changeText(4)"><br><br>
+          <h5>PHOTOGRAPHY</h5>
+          <img src="images/under.fw.png">
+        </div>
+      </div>
+
+      <div class="row" ng-switch on="textVal">
+        <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
+        <hr>
+          <span ng-switch-when="1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac diam feugiat, blandit nisl sit amet, fringilla enim. Integer consectetur ligula in sagittis accumsan. In ullamcorper volutpat maximus. Praesent facilisis tortor eu sapien sagittis eleifend. Curabitur vulputate, lorem in fringilla porta, odio odio posuere velit, condimentum consequat ligula sapien ut ex. Maecenas commodo ex sed odio ultrices porta.
+          </span>
+          <span ng-switch-when="2">
+          In diam quam, vestibulum et tempus et, aliquet sed odio. Etiam tincidunt erat ac aliquet tincidunt. Sed ipsum enim, varius vehicula ligula quis, lobortis condimentum erat. Nam non imperdiet nulla, vitae blandit turpis. Fusce quis dolor non diam sagittis mattis at vitae justo. Suspendisse blandit, nulla et vulputate consectetur, urna libero porta nisi, eu porta nunc nibh ac lacus.
+          </span>
+          <span ng-switch-when="3">
+          Pellentesque pretium ipsum diam, sed semper sapien vehicula ac. Nulla semper urna a pharetra fringilla. Praesent quis turpis id orci venenatis ullamcorper. Nam a placerat sapien. Nam lacinia risus eget erat hendrerit, a sodales leo malesuada. Vestibulum bibendum mattis facilisis. Pellentesque blandit tortor eu erat mollis pharetra. Duis at tristique magna, eu placerat orci. 
+          </span>
+          <span ng-switch-when="4">
+          Duis pretium velit eget elementum pellentesque. Fusce aliquet vitae ipsum eget tincidunt. Ut nulla felis, aliquet eget placerat sed, interdum suscipit turpis. Donec velit ante, euismod in nibh vitae, vestibulum pharetra justo. Sed nec neque id velit porttitor ornare. Sed fermentum nulla ex, quis fringilla erat lobortis nec. Duis nec congue lacus. Cras augue arcu, sodales sit amet auctor eu, sollicitudin non lectus.
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="services" id="getnow">
+
+      <div class="row" id="start">
+        <div class="col-xs-6 col-sm-4 col-sm-offset-2">
+          <h5>START TOUR</h5>
+        </div>
+        <div class="col-xs-6 col-sm-4">
+          <h5>FOR ALL DEVICES</h5>
+        </div>
+      </div>
+
+      <div class="row text_left">
+        <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+          <img class="img-responsive" src="images/iphones.png">
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <h2>Fully Responsive</h2><br>
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac diam feugiat, blandit nisl sit amet, fringilla enim. Integer consectetur ligula in sagittis accumsan. In ullamcorper volutpat maximus. Praesent facilisis tortor eu sapien sagittis eleifend. Maecenas commodo ex sed odio ultrices porta.
+          </span><br><br>
+          <a href="#cont_anch" offset="50" scroll-to="cont_anch"><button class="btn butt black">GET NOW</button></a>
+        </div>
+      </div>
+
+    </div><a name="portf_anch" id="portf_anch"></a>
+
+  <div class="services" id="portf_head">
+      
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+          <h2>Our Portfolio</h2>
+          <img src="images/mid_und.fw.png"><br><br>
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac diam feugiat, blandit nisl sit amet, fringilla enim. Integer consectetur ligula in sagittis accumsan.
+          </span>
+        </div>
+      </div>
+
+      <div class="row" id='filter'>
+        <div class="col-sm-2 col-sm-offset-2 col-xs-3" ng-click='catChanger("All")'>
+          <h5>ALL</h5>
+        </div>
+
+        <div class="col-sm-2 col-xs-3" ng-click='catChanger("Web")'>
+          <h5>WEB</h5>
+        </div>
+
+        <div class="col-sm-2 col-xs-3" ng-click='catChanger("Photography")'>
+          <h5>PHOTOGRAPHY</h5>
+        </div>
+
+        <div class="col-sm-2 col-xs-3" ng-click='catChanger("Graphic design")'>
+          <h5>GRAPHIC DESIGN</h5>
+        </div>
+      </div>
+
+  <div class="container-fluid" id="portf_images">
+
+    <div id='allImages'>
+      <div class='row portf_gall'>
+
+        <div ng-repeat="img in items | skipItems : category" class = 'col-sm-2 col-xs-4'>
+          <div class='mask' ng-show='vis' ng-mouseleave="vis = false"><span>{{category}}</span></div>
+          <img class="img-responsive" src={{img.path}} ng-mouseover="vis = true"  ng-cloak>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+    <div class="row services sta" id="statistics">
+
+      <div class="col-sm-2 col-sm-offset-2 col-xs-4 col-xs-offset-2">
+        <div class='stat_div'>
+        <img src="images/comp.fw.png">
+        <h2 class="stata">3054</h2>
+        <h5>COMPLETED PROJECTS</h5><br><br>
+        </div>
+      </div>
+
+      <div class="col-sm-2 col-sm-offset-0 col-xs-4">
+        <div class='stat_div'>
+        <img src="images/click.fw.png">
+        <h2 class="stata">7 234 873</h2>
+        <h5>CLICKS PRESED</h5><br><br>
+      </div>
+      </div>
+
+      <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-2">
+        <div class='stat_div'>
+        <img src="images/mail.fw.png">
+        <h2 class="stata">4670</h2>
+        <h5>MAIL SENT&RECIVED</h5><br><br>
+      </div>
+      </div>
+
+      <div class="col-sm-2 col-sm-offset-0 col-xs-4">
+        <div class='stat_div'>
+        <img src="images/joke.fw.png">
+        <h2 class="stata" id='lol'>939</h2>
+        <h5>JOKES TOLD</h5><br><br>
+      </div>
+      </div>
+  
+    </div><a name="about_anch" id="about_anch"></a>
+
+    <div class="services" id="team">
+      
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+          <h2>We are the one</h2>
+          <img src="images/mid_und.fw.png"><br><br>
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac diam feugiat, blandit nisl sit amet, fringilla enim. Integer consectetur ligula in sagittis accumsan.
+          </span>
+        </div>
+      </div>
+
+      <div team-mem="team"></div>
+
+
+    </div><a name="news_anch" id="news_anch"></a>
+
+
+    <div class="services" id="news">
+      
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+          <h2>Check our news</h2>
+          <img src="images/mid_und.fw.png"><br><br>
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac diam feugiat, blandit nisl sit amet, fringilla enim. Integer consectetur ligula in sagittis accumsan.
+          </span>
+        </div>
+      </div><br><br><br>
+
+
+      <div class="row" id="news_desc" ng-repeat='item in news | orderBy : sortFunc : true | limitTo : 4 ' ng-cloak>
+        <div class="col-sm-1 col-sm-offset-3 col-xs-3">
+          <h1>{{item.date.split('/')[1]}}</h1>
+          <span>{{monthNames[(item.date.split('/')[0] - 1)]}}</span>
+        </div>
+        <div class="col-sm-5 col-xs-8 text_left">
+          <span>{{item.text}}</span>
+          <a href="{{item.id}}.html" target="_blank"><h5>Read More</h5></a>
+          <hr>
+        </div>
+      </div>
+
+      
+    </div><a name="cont_anch" id="cont_anch"></a>
+
+    <div class="services" id="contacts">
+      
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+          <h2>Contact Us</h2>
+          <img src="images/mid_und.fw.png"><br><br>
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac diam feugiat, blandit nisl sit amet, fringilla enim. Integer consectetur ligula in sagittis accumsan.
+          </span>
+        </div>
+      </div><br><br><br>
+
+      <div class="row" id="form_inputs">
+        <form name="myForm" class="form-horizontal">
+          <fieldset>
+
+            <div class="row">
+
+              <div class="col-sm-3 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                <input type="text" class="form-control" id="inputName" placeholder="Your name here" ng-model="myForm.name" ng-pattern="nameRegex">
+                <span ng-show="!myForm.name">Only letters allowed!</span>
+                <span ng-show="myForm.name" style ="color: #121215;">Only letters allowed!</span>
+              </div>
+
+              <div class="col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                <input type="text" class="form-control" id="inputMail" placeholder="Your mail here" ng-model="myForm.mail" ng-pattern="mailRegex">
+                <span ng-show="myForm.mail" style ="color: #121215;">Letters, numbers, @, _, ., allowed!</span>
+                <span ng-hide="myForm.mail">Letters, numbers, @, _, ., allowed!</span>
+              </div>
+              
+            </div><br><br>
+
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                <input type="text" class="form-control" id="inputSubject" placeholder="Your message here" ng-model="myForm.message" ng-pattern="messageRegex">
+                <span ng-show="myForm.message" >Minimal length of message 20 symbols!</span>
+                <span ng-hide="myForm.message" style ="color: #121215;">Minimal length of message 20 symbols!</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-2 col-sm-offset-7 col-xs-6 col-xs-offset-3">
+                <button type="submit" class="btn butt" id='btn' ng-click="makeCookie()">Send Message</button><br><br>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+
+    </div>
+
+    <div id='footer'>
+      <div class="row" id="up_foot">
+        <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4">
+          <div id="info">
+            <br>
+            <span>Awesome Address 432</span>
+            <br><br>
+            <span>mail@sometype.com</span>
+            <br><br>
+            <span>+321(0)32 123 456 789</span>
+            <br><br>
+          </div>
+          <!--<img src="images/tria.fw.png">-->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+          <br>
+          <h6> <a href="#home_anch" offset="50" scroll-to="home_anch"><span class="butt" id="up_arr">&#9651;</span></a> &nbsp;&nbsp;&nbsp; &#169; 2014 <span style="color: #00E0FF;">KET</span>. All rights reserved.</h6>
+          <br>
+        </div>
+      </div>
+    </div>
+
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+</body>
+</html>
