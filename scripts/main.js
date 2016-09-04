@@ -104,6 +104,7 @@ var PortfApp = angular.module("PortfApp", ['smoothScroll', 'ngCookies'])
 
     function tick(from, to, duration) {
         if (from > to) {
+            this.innerHTML = to;
             return;
         } else{
             var step;
@@ -134,10 +135,6 @@ var PortfApp = angular.module("PortfApp", ['smoothScroll', 'ngCookies'])
             tick.bind(stat_values[2])(0, mails, 3000);
             tick.bind(stat_values[3])(0, jokes, 3000);
             scrolled1 = true;
-        }else if(pageY > startYBot){
-            scrolled1 = false;
-        }else if(pageY < startYBot - cH){
-            scrolled1 = false;
         }
     }
 
