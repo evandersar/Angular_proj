@@ -136,6 +136,7 @@ var PortfApp = angular.module("PortfApp", ['smoothScroll', 'ngCookies'])
             tick.bind(stat_values[3])(0, jokes, 3000);
             scrolled1 = true;
         }
+        
     }
 
     //DATA FOR CUSTOM DIRECTIVE
