@@ -99,7 +99,7 @@ var PortfApp = angular.module("PortfApp", ['smoothScroll', 'ngCookies'])
     var stat_values = document.querySelectorAll('.sta h2');
     var targ_elem = document.getElementById('lol');
     //console.log(stat_values);
-    var startYBot = targ_elem.getBoundingClientRect().bottom + window.pageYOffset+400;
+    var startYBot = targ_elem.getBoundingClientRect().bottom + window.pageYOffset;
     var scrolled1 = false;
 
     function tick(from, to, duration) {
